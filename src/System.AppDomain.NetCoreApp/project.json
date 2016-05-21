@@ -13,7 +13,7 @@
             "url": "https://github.com/StefH/System.AppDomain.Core"
         },
         "projectUrl": "https://github.com/StefH/System.AppDomain.Core",
-        "licenseUrl": "https://github.com/StefH/System.AppDomain.Core/blob/master/licence.txt",
+        "licenseUrl": "https://raw.githubusercontent.com/StefH/System.AppDomain.Core/master/LICENSE",
         "releaseNotes": "initial version"
     },
 
