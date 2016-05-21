@@ -1,6 +1,22 @@
 {
     "version": "1.0.0-*",
     "authors": [ "Stef Heyenrath" ],
+    "title": "System.AppDomain.NetCoreApp",
+    "description": "Mimic call to AppDomain.CurrentDomain.GetAssemblies()",
+
+    "packOptions": {
+        "summary": "Mimic call to AppDomain.CurrentDomain.GetAssemblies()",
+        "tags": [ "system", "appdomain", "netcoreapp", "core", "assembly", "assemblies" ],
+        "owners": [ "Stef Heyenrath" ],
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/StefH/System.AppDomain.Core"
+        },
+        "projectUrl": "https://github.com/StefH/System.AppDomain.Core",
+        "licenseUrl": "https://github.com/StefH/System.AppDomain.Core/blob/master/licence.txt",
+        "releaseNotes": "initial version"
+    },
+
     "buildOptions": {
         "emitEntryPoint": false
     },

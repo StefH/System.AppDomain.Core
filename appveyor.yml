@@ -21,8 +21,8 @@ environment:
 build_script:
 - appveyor-retry dotnet restore -v Minimal
 
-- dotnet build src\System.AppDomain.NetCoreApp\project.json -c %CONFIGURATION%
-- dotnet build examples\NetCoreApp\project.json -c %CONFIGURATION%
+- dotnet build .\src\System.AppDomain.NetCoreApp\project.json -c %CONFIGURATION%
+- dotnet build .\examples\NetCoreApp\project.json -c %CONFIGURATION%
 
 - dotnet pack -c Release --no-build --version-suffix %LABEL% -o .\artifacts .\src\System.AppDomain.NetCoreApp\project.json
 
