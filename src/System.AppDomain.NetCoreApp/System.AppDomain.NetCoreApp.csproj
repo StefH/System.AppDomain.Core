@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <Description>Mimic call to AppDomain.CurrentDomain.GetAssemblies()</Description>
+    <Title>System.AppDomain.NetCoreApp</Title>
     <AssemblyTitle>System.AppDomain.NetCoreApp</AssemblyTitle>
     <Version>1.1.0</Version>
     <Authors>Stef Heyenrath</Authors>
