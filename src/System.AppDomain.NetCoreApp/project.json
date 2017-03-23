@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0-*",
+    "version": "1.0.1-*",
     "authors": [ "Stef Heyenrath" ],
     "title": "System.AppDomain.NetCoreApp",
     "description": "Mimic call to AppDomain.CurrentDomain.GetAssemblies()",
@@ -14,7 +14,7 @@
         },
         "projectUrl": "https://github.com/StefH/System.AppDomain.Core",
         "licenseUrl": "https://raw.githubusercontent.com/StefH/System.AppDomain.Core/master/LICENSE",
-        "releaseNotes": "initial version"
+        "releaseNotes": "Update to Microsoft.NETCore.App version 1.0.1"
     },
 
     "buildOptions": {
@@ -22,11 +22,8 @@
     },
 
     "dependencies": {
-        "Microsoft.Extensions.DependencyModel": "1.0.0-rc2-final",
-        "Microsoft.NETCore.App": {
-            "type": "platform",
-            "version": "1.0.0-rc2-*"
-        }
+        "Microsoft.Extensions.DependencyModel": "1.1.0",
+        "Microsoft.NETCore.App": "1.0.1"
     },
 
     "frameworks": {

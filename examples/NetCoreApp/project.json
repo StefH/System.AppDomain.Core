@@ -9,21 +9,18 @@
     "dependencies": {
         "Microsoft.NETCore.App": {
             "type": "platform",
-            "version": "1.0.0-rc2-*"
+            "version": "1.0.1"
         },
         "System.AppDomain.NetCoreApp": { "target": "project" },
-        "AutoMapper": "4.2.1"
+        "AutoMapper": "4.2.1",
+        "System.Console": "4.3.0"
     },
 
     "frameworks": {
-        "netcoreapp1.5": {
+        "netcoreapp1.0": {
             "imports": [
-                "dotnet5.4",
-                "portable-net451+win8"
-            ],
-            "dependencies": {
-                "System.Console": "4.0.0-rc2-*"
-            }
+                "dnxcore50"
+            ]
         }
     }
 }
