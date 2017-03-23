@@ -1,5 +1,5 @@
 {
-    "version": "1.0.1-*",
+    "version": "1.0.2-*",
     "authors": [ "Stef Heyenrath" ],
     "title": "System.AppDomain.NetCoreApp",
     "description": "Mimic call to AppDomain.CurrentDomain.GetAssemblies()",
@@ -15,10 +15,6 @@
         "projectUrl": "https://github.com/StefH/System.AppDomain.Core",
         "licenseUrl": "https://raw.githubusercontent.com/StefH/System.AppDomain.Core/master/LICENSE",
         "releaseNotes": "Update to Microsoft.NETCore.App version 1.0.1"
-    },
-
-    "buildOptions": {
-        "emitEntryPoint": false
     },
 
     "dependencies": {
