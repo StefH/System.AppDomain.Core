@@ -1,6 +1,4 @@
-os: Visual Studio 2015
-
-version: 1.0.0.{build}
+version: 1.1.0.{build}
 
 configuration:
 - Debug
@@ -12,8 +10,9 @@ init:
 - ps: $Env:LABEL = "CI" + $Env:APPVEYOR_BUILD_NUMBER.PadLeft(5, "0")
 
 install:
-- ps: Start-FileDownload 'https://download.microsoft.com/download/0/A/3/0A372822-205D-4A86-BFA7-084D2CBE9EDF/DotNetCore.1.0.1-SDK.1.0.0.Preview2-003133-x64.exe'
-- cmd: DotNetCore.1.0.1-SDK.1.0.0.Preview2-003133-x64 /quiet
+  - ps: Start-FileDownload 'https://download.microsoft.com/download/8/F/9/8F9659B9-E628-4D1A-B6BF-C3004C8C954B/dotnet-1.1.1-sdk-win-x64.exe'
+  - cmd: dotnet-1.1.1-sdk-win-x64.exe /quiet
+  - ps: $env:DOTNET_SKIP_FIRST_TIME_EXPERIENCE = "true"
 
 environment:
   PATH: $(PATH);$(PROGRAMFILES)\dotnet\
@@ -21,11 +20,9 @@ environment:
 build_script:
 - appveyor-retry dotnet restore -v Minimal
 
-- dotnet build .\src\System.AppDomain.NetCoreApp\project.json -c %CONFIGURATION%
-- dotnet build .\examples\NetCoreApp\project.json -c %CONFIGURATION%
-- dotnet build .\examples\NetCoreWebApplication\project.json -c %CONFIGURATION%
-
-- dotnet pack -c Release --no-build --version-suffix %LABEL% -o .\artifacts .\src\System.AppDomain.NetCoreApp\project.json
+- dotnet build .\src\System.AppDomain.NetCoreApp\System.AppDomain.NetCoreApp.csproj -c %CONFIGURATION%
+- dotnet build .\examples\NetCoreApp\NetCoreApp.csproj -c %CONFIGURATION%
+- dotnet build .\examples\NetCoreWebApplication\NetCoreWebApplication.csproj -c %CONFIGURATION%
 
 artifacts:
 - path: artifacts\**\*.*

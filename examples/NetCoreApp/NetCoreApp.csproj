@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Stef Heyenrath</Authors>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>NetCoreApp</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>NetCoreApp</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\System.AppDomain.NetCoreApp\System.AppDomain.NetCoreApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.0.2" />
+    <!--<PackageReference Include="System.Console" Version="4.3.0" />-->
+  </ItemGroup>
+
+</Project>

@@ -1,23 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DB9A5C42-3F8B-4546-96F2-DD35BCACA018}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{1A43BA07-0742-4D95-83DF-50486301DF7C}"
 	ProjectSection(SolutionItems) = preProject
 		appveyor.yml = appveyor.yml
+		global.json = global.json
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "System.AppDomain.NetCoreApp", "src\System.AppDomain.NetCoreApp\System.AppDomain.NetCoreApp.xproj", "{1E6E8F58-F37D-4AD5-88F5-5BAADB3DD505}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{57E4BD5E-EA38-4913-A45C-B349AE5D5C54}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.AppDomain.NetCoreApp", "src\System.AppDomain.NetCoreApp\System.AppDomain.NetCoreApp.csproj", "{1E6E8F58-F37D-4AD5-88F5-5BAADB3DD505}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "NetCoreApp", "examples\NetCoreApp\NetCoreApp.xproj", "{760AC1F6-E3C1-479F-9990-A1392CF098B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreApp", "examples\NetCoreApp\NetCoreApp.csproj", "{760AC1F6-E3C1-479F-9990-A1392CF098B5}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApplication", "examples\NetCoreWebApplication\NetCoreWebApplication.csproj", "{5E9C59F0-B155-4E1F-8419-B226F7AB4EA7}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "NetCoreWebApplication", "examples\NetCoreWebApplication\NetCoreWebApplication.xproj", "{5E9C59F0-B155-4E1F-8419-B226F7AB4EA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
