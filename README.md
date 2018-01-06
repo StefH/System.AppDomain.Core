@@ -4,5 +4,6 @@
 
 A replacement for `AppDomain.CurrentDomain.GetAssemblies()` call which is not present for NetCoreApp/NetStandard.
 
-
-[![NuGet Badge](https://buildstats.info/nuget/System.AppDomain.NetCoreApp)](https://www.nuget.org/packages/System.AppDomain.NetCoreApp)
+| Name | NuGet
+|------|------
+| System.AppDomain.NetCoreApp | [![NuGet Badge](https://buildstats.info/nuget/System.AppDomain.NetCoreApp)](https://www.nuget.org/packages/System.AppDomain.NetCoreApp)

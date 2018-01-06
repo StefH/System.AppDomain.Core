@@ -4,13 +4,13 @@
     <Description>Mimic call to AppDomain.CurrentDomain.GetAssemblies()</Description>
     <Title>System.AppDomain.NetCoreApp</Title>
     <AssemblyTitle>System.AppDomain.NetCoreApp</AssemblyTitle>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <Authors>Stef Heyenrath</Authors>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFrameworks>netcoreapp1.0;netcoreapp1.1</TargetFrameworks>
     <AssemblyName>System.AppDomain.NetCoreApp</AssemblyName>
     <PackageId>System.AppDomain.NetCoreApp</PackageId>
     <PackageTags>system;appdomain;netcoreapp;core;assembly;assemblies</PackageTags>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>Support netcoreapp1.0 and netcoreapp1.1</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/StefH/System.AppDomain.Core</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/StefH/System.AppDomain.Core/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
