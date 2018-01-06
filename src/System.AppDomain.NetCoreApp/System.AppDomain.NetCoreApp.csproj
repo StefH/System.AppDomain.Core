@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Mimic call to AppDomain.CurrentDomain.GetAssemblies()</Description>
+    <Title>System.AppDomain.NetCoreApp</Title>
+    <AssemblyTitle>System.AppDomain.NetCoreApp</AssemblyTitle>
+    <Version>1.1.0</Version>
+    <Authors>Stef Heyenrath</Authors>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>System.AppDomain.NetCoreApp</AssemblyName>
+    <PackageId>System.AppDomain.NetCoreApp</PackageId>
+    <PackageTags>system;appdomain;netcoreapp;core;assembly;assemblies</PackageTags>
+    <PackageReleaseNotes>Update to Microsoft.NETCore.App version 1.1.0</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/StefH/System.AppDomain.Core</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/StefH/System.AppDomain.Core/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/StefH/System.AppDomain.Core</RepositoryUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>

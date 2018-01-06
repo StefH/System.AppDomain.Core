@@ -24,7 +24,7 @@ namespace NetCoreWebApplication
                 Type thisType = typeof(Program);
 
                 var assemblies = AppDomain.CurrentDomain.GetAssemblies(thisType);
-                await context.Response.WriteAsync(string.Join("\r\n", assemblies.Select(a => a.FullName)));
+                await context.Response.WriteAsync(string.Join("<br>", assemblies.Select(a => a.FullName)));
             });
         }
     }
